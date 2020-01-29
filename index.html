@@ -71,7 +71,7 @@
     <article id="post-PCA" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/29/PCA/" class="article-date">
-  <time datetime="2020-01-29T06:51:50.763Z" itemprop="datePublished">2020-01-29</time>
+  <time datetime="2020-01-29T07:43:45.237Z" itemprop="datePublished">2020-01-29</time>
 </a>
     
   </div>
@@ -13403,74 +13403,18 @@ div#notebook {
 <li>차원축소문제는 다차원 벡터를 더 낮은 차원의 벡터공간에 투영하는 문제로 생각하여 풀 수 있다. 즉, 특이분해에서 살펴본 로우-랭크 근사(low-rank approximation) 문제가 된다. 이 문제는 다음과 같이 서술할 수 있다.</li>
 <li>N 개의 M차원 데이터 벡터 x1,x2,⋯,xN를 정규직교인 기저벡터 w1,w2,⋯,wK로 이루어진 K차원 벡터공간으로 투영하여 가장 비슷한 N개의 K차원 벡터 x∥w1,x∥w2,⋯,x∥wN를 만들기 위한 정규직교 기저벡터 w1,w2,⋯,wK를 찾는다.</li>
 </ul>
+<p>다만 원래의 로우-랭크 근사문제와 달리 근사 성능을 높이기 위해 직선이 원점을 지나야 한다는 제한조건을 없애야 한다. 따라서 문제는 다음과 같이 바뀐다.</p>
+<ul>
+<li>N 개의 M차원 데이터 벡터 x1,x2,⋯,xN에 대해 어떤 상수 벡터 x0를 뺀 데이터 벡터 x1−x0,x2−x0,⋯,xN−x0를 정규직교인 기저벡터 w1,w2,⋯,wK로 이루어진 K차원 벡터공간으로 투영하여 가장 비슷한 N개의 K차원 벡터 x∥w1,x∥w2,⋯,x∥wN를 만들기 위한 정규직교 기저벡터 w1,w2,⋯,wK와 상수 벡터 x0를 찾는다.</li>
+</ul>
+<p>N 개의 데이터를 1차원 직선에 투영하는 문제라고 하면 원점을 지나는 직선을 찾는게 아니라 원점이 아닌 어떤 점  x0 을 지나는 직선을 찾는 문제로 바꾼 것이다</p>
+<p>이 문제의 답은 다음과 같다.</p>
+<ul>
+<li>x0 는 데이터 벡터  x1,x2,⋯,xN 의 평균벡터이고  w1,w2,⋯,wK 는 가장 큰  K 개의 특잇값에 대응하는 오른쪽 특이벡터  v1,v2,⋯,vK 이다.</li>
+</ul>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14772,7 +14716,7 @@ KR  81.274683
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ds-heejae.github.io/2020/01/29/PCA/" data-id="ck5yz0m7z0001g4upbmpvhc8x" class="article-share-link">Share</a>
+      <a data-url="http://ds-heejae.github.io/2020/01/29/PCA/" data-id="ck5z086yf00017wup4o8og6xm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -14854,7 +14798,7 @@ KR  81.274683
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ds-heejae.github.io/2020/01/22/20200122git_start/" data-id="ck5yz0m6u0000g4up0prp6qta" class="article-share-link">Share</a>
+      <a data-url="http://ds-heejae.github.io/2020/01/22/20200122git_start/" data-id="ck5z086xm00007wup5nyt0ap5" class="article-share-link">Share</a>
       
       
     </footer>
